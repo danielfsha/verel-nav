@@ -103,7 +103,7 @@ export function Navbar() {
   return (
     <motion.nav
       style={{ height: navbarHeight }}
-      className="sticky top-0 z-50 w-full bg-white overflow-hidden border-b border-[#000000]/8"
+      className="sticky top-0 z-50 w-full bg-white overflow-hidden border-b border-[#000000]/8 px-2"
     >
       <div className="flex h-12 space-x-3 items-center justify-between px-4">
         {/* Left Section - Logo */}
@@ -188,7 +188,7 @@ export function Navbar() {
       {/* bottom nav */}
       <motion.div
         style={{ y: bottomNavY, x: bottomNavX }}
-        className="relative h-10 flex items-center overflow-hidden"
+        className="px-2 relative h-10 flex items-center overflow-hidden"
       >
         {navigationItems.map((item, index) => (
           <Button
